@@ -1,0 +1,528 @@
+.banner {
+    width: 100%;
+    height: 100%;
+    background-image: url("img/banner.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  .banner img {
+    width: 100%;
+    height: auto;}
+  
+  nav {
+    width: 100%;
+    background-color: #92ccb6;
+    padding: 10px 0;
+    text-align: center;
+    margin-top: -3px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav li {
+    margin: 0 20px;
+    font-size: 22px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+  }
+  
+  main {
+    padding: 20px;
+    /* estilos para o conteúdo principal */
+  }
+
+  .banner-container {
+    position: relative;
+  }
+  
+  /*Botão de Login*/
+  .login-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  
+  .btn-login {
+    background-color: #92ccb6;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  
+  .btn-login:hover {
+    background-color: #005a8e;
+  }
+
+  .artist-item{
+    border: 1px solid #ccc;
+    padding-top: 10px;
+    padding-bottom: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    height: 80%; 
+    border-radius: 20px;
+    background-color: #e4e2e2;
+  }
+
+  .pesquisa-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .pesquisa-input {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+    font-size: 16px;
+    width: 300px;
+  }
+  
+  .botao-pesquisa {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 8px 12px;
+  }
+
+  h2 {
+    font-size: 35px;
+    font-weight: bold;
+    color: #9e6b7c;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+
+    
+  }
+
+  h3 {
+    font-size: 20px;
+    font-weight: normal;
+    color: #555;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    line-height: 1.5;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  h4 {
+    font-size: 20px;
+    font-weight: normal;
+    color: #555;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    line-height: 1.5;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  p{
+    font-size: 20px;
+    font-weight: normal;
+    color: #555;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 40px;
+  }
+  .artistas{
+    width: 200px;
+    height: 250px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease-in-out;
+    border-radius: 20px;
+  }
+  .artistas:hover {
+    transform: scale(1.1);
+  }
+
+  .btn-ver-mais {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 70px 2px;
+    margin-top: -40px;
+    cursor: pointer;
+    border-radius: 4px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .btn-ver-mais:hover {
+    background-color: #45a049; /* cor de fundo do botão quando o mouse passar por cima */
+  }
+
+  .row {
+    display: flex;
+    margin: -10px;
+    margin-bottom: 40px ;
+  }
+  
+  .grid_3,
+  .grid_12 {
+    flex: 0 0 auto;
+    padding: 10px;
+    box-sizing: border-box; /* inclui o padding no cálculo da largura */
+  }
+  
+  .grid_3 {
+    width: 24%; /* cada artista deve ocupar 25% da largura */
+  }
+  
+  .grid_12 {
+    width: 100%;
+  }
+
+    
+  .image-link {
+    transition: transform 0.3s ease-in-out;
+    border-radius: 20px;
+  }
+  
+  .image-link:hover {
+    transform: scale(1.1);
+  }
+    
+  .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .imgsobrenos {
+    width: 250px;
+    margin-bottom: 40px;
+  }
+
+  footer {
+    background-color: #9e6b7c;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+    bottom: 0;
+  }
+  
+  footer p {
+    margin: 0;
+    font-size: 14px;
+  }
+
+  a {
+    text-decoration: none; /* remove o sublinhado */
+    color: inherit; /* herda a cor do elemento pai */
+  }
+  a:hover {
+    color: #9e6b7c; /* cor do link quando o mouse passa por cima */
+  }
+    
+<!-- perfil artistas--> 
+
+.container-perfil {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.nome-artista {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #9e6b7c;
+  text-align: center;
+}
+
+.info-artista {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.foto-perfil {
+  width: 150px;
+  height: 150px;
+  border-radius: 20%;
+  object-fit: cover;
+  margin-right: 40px;
+}
+
+.descricao-artista {
+  background-color: #e4e2e2;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  flex-grow: 1;
+  text-align: left;
+  
+}
+
+CSS ICONE
+.contato-artista {
+  width: 200px;
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.icone-contato {
+  width: 120px;
+  height: 120px;
+  margin-left: 40px;
+  margin-right: 20px;
+}
+
+.info-contato {
+  position: absolute;
+  background-color:#f3d597;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.link-contato {
+  display: block;
+  color: #333;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
+.link-contato i {
+  font-size: 18px;
+  margin-right: 10px;
+}
+.itens-contato{
+  font-size: 15px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+botao de fechar informações
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 30%;
+  position: relative; 
+}
+
+.close-button {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  position: absolute; 
+  top: 10px; /* ajusta a posição vertical do botão */
+  right: 10px; /* ajusta a posição horizontal do botão */
+}
+
+.close-button:hover,
+.close-button:focus {
+  color: black;
+  text-decoration: none;
+}
+
+PAGINA DAS ARTES 
+PAGINA DAS ARTES 
+PAGINA DAS ARTES 
+PAGINA DAS ARTES 
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -10px;
+}
+
+@media (min-width: 768px) {
+  .col-6.col-md-3 {
+    flex:25%;
+    max-width: 25%; /* aumenta o rentangulo */
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+.art-item {
+  border: 1px solid #ccc;
+  padding: 25px;
+  text-align: center;
+  height: 80%; 
+  border-radius: 20px;
+  background-color: #e4e2e2;
+}
+
+.art-item img {
+  max-width: 100%;
+  height: 300px;
+  object-fit: cover;
+  margin-bottom: 10px;
+  border-radius: 20px;
+}
+
+.art-item h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 18px;
+  
+}
+
+.art-item h4 {
+  margin-top: -20px;
+  font-size: 18px;
+  color: #9e6b7c;
+}
+.art-item p {
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+/* Estilo do modal */
+/* Estilo do modal */
+/* Estilo do modal */
+/* Estilo do modal */
+
+.image-modal {
+  display: none;  /* Inicialmente o modal está oculto  */
+  position: fixed; /* Posição fixa na tela */
+  z-index: 1; /* Nível de profundidade do modal */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; /* Permite rolar a tela se o conteúdo for maior */
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.image-modal {
+  display: none; 
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* wrapper para centralizar o conteúdo do modal */
+.image-modal__content-wrapper {
+  display: flex;  /* exibe o conteúdo usando flexbox */
+  justify-content: center;  /* centraliza o conteúdo horizontal e verticalmente */
+  align-items: center;
+  height: 100%;
+}
+
+/* estilo da imagem ampliada */
+.image-modal__content {
+  max-width: 90%;
+  max-height: 90%;
+  width: auto;
+  height: auto;
+}
+
+/* estilo do botão de fechar o modal */
+.image-modal__close-button {
+  color: #fff;
+  position: absolute;  /* posição absoluta no canto superior direito */
+  top: 20px;
+  right: 30px;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+/* estilos de hover e foco para o botão de fechar */
+.image-modal__close-button:hover,
+.image-modal__close-button:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+FILTRO
+FILTRO 
+FILTRO
+
+.filters {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  align-items: center;
+  
+}
+
+.filter-button {
+  background-color: #b6d89c;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin: 0 5px;
+  border-radius: 20px;
+}
+
+.filter-button.active {
+  background-color: #ccc;
+}
+
+.art-item {
+  display: block;
+}
+
+.art-item.hide {
+  display: none;
+}
+.art-items-container .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.art-items-container .row > .col-6.col-md-3 {
+  flex: 0 0 23%;
+  max-width: 23%; /* aqui onde estava o problema de deixar 3 itens, antes 25% agora 23% */
+}
+
+
+
+
+

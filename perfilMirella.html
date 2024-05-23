@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="960_12_col.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="contato.js"></script>
+    <title>Conecta Arte</title>
+</head>
+<body>
+  <div class="container_12 clearfix"></div>
+  
+  <header>
+    <!-- <h1>CONECTA ARTE</h1> -->
+    <section class="banner">
+         <!--Baner + Botão de Login-->
+      <div class="banner-container">
+        <section class="banner">
+          <img src="imagens/Banner.jpg" alt="Banner do site" width="100%">
+        </section>
+        <div class="login-button">
+          <a href="login.html" class="btn btn-login">Fazer Login</a>
+        </div>
+      </div>
+      
+      <nav>
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="artistas.html">Artistas</a></li>
+          <li><a href="artes.html">Artes</a></li>
+          <li><a href="sobrenos.html">Sobre Nós</a></li>
+        </ul>
+      </nav>
+  </header>
+
+  <main>
+    <section>
+        <div class="container-perfil">
+            <h1 class="nome-artista">Mirella Ramos</h1>
+
+            <!--Foto de perfil -->
+            <div class="info-artista">
+              <img src="imagens/artista01.jpg" alt="Foto de Perfil" class="foto-perfil">
+              
+              <div class="descricao-artista">
+                <p>Sou uma talentosa pintora que adora criar obras com técnicas mistas, explorando texturas e cores vibrantes. 
+                    Minhas telas capturam a essência da natureza, tentando transportar os observadores para um mundo de beleza e contemplação.</p>
+              </div>
+              <!--Icone de contatos-->
+              <div class="contato-artista" onclick="toggleContato()">
+                <img src="imagens/icone.png" alt="Ícone de Contato" class="icone-contato">
+              </div>
+
+              <!--Botão para fechar janela de informações-->
+              <div class="info-contato" id="info-contato" style="display: none;">
+                <div class="modal-content">
+                  <span class="close-button" onclick="document.getElementById('info-contato').style.display = 'none';">&times;</span>
+
+                  <!--Informações do artista-->
+                  <a href="mailto:artista@email.com" class="link-contato">
+                    <i class="fas fa-envelope"></i>
+      
+                    <p class="itens-contato"> E-mail:</p>
+                    MirellaRamosArt@gmail.com
+                  </a>
+
+                  <a href="tel:+1234567890" class="link-contato">
+                    <i class="fas fa-phone"></i>
+                  <p class="itens-contato"> Telefone:</p>
+                    +1 (81) 90000-0000
+                  </a>
+
+                  <a href="https://www.instagram.com/artista" class="link-contato">
+                    <i class="fab fa-instagram"></i>
+                    <p class="itens-contato"> Instagram:</p>
+                    @ArtsMirella
+                  </a>
+                  
+                  <a href="https://www.website.com" class="link-contato">
+                    <i class="fas fa-globe"></i>
+                    <p class="itens-contato"> Site:</p>
+                    www.MirellaRamosArt.com
+                  </a>
+                  <a href="https://goo.gl/maps/abcdefghijk" class="link-contato">
+                      <i class="fas fa-map-marker-alt"></i>
+                      <p class="itens-contato"> Endereço:</p>
+                      Boa vista, Recife - PE
+                  </a>
+      
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <br> 
+          <h3>Artes Publicadas</h3>
+          <br> 
+
+          <!-- Artes Publicadas -->
+
+          <div class="art-items-container">
+            <div class="row">
+               <!-- Modal -->
+               <!-- Este é o elemento principal do modal, com um ID único e uma classe -->
+               <div id="image-modal" class="image-modal">
+                   <!-- Botão de fechar o modal, com uma classe específica -->
+                   <span class="image-modal__close-button">&times;</span>
+                   <!-- Wrapper para centralizar o conteúdo do modal (imagem ) -->
+                   <div class="image-modal__content-wrapper">
+                       <!-- Elemento img que exibirá a imagem ampliada, com uma classe e um ID -->
+                     <img class="image-modal__content" id="modal-image">
+                   </div>
+                 </div>
+          
+          
+          
+            <div class="col-6 col-md-3">
+              <div class="art-item">
+                <h3>Mar e Céu </h3>
+                <img src="imagens/arte06.jpg" alt="Pintura do mar e ceu" class="art-item__image">
+                <p>Pintura em acrílica retratando um belo cenário marítimo com céu rosado.</p>
+                <a href="perfilMirella.html"><h4>Mirella Ramos</h4></a>
+              </div>
+            </div>
+          
+      
+          <div class="col-6 col-md-3" >
+            <div class="art-item" data-type="pintura">
+              <h3>Entardecer no lago</h3>
+              <img src="imagens/arte11.jpg" alt="Pintura de um entardecer no lago" class="art-item__image">
+              <p>Pintura em acrílica retratando um belo lago no entardecer.</p>
+              <a href="perfilMirella.html"><h4>Mirella Ramos</h4></a>
+            </div>
+          </div>
+        
+          <div class="col-6 col-md-3">
+              <div class="art-item" data-type="pintura">
+                <h3>Tarde no campo</h3>
+                <img src="imagens/arte13.jpg" alt="Pintura" class="art-item__image">
+                <p>Pintura em acrílica retratando uma tarde no campo. </p>
+                <a href="perfilMirella.html"><h4>Mirella Ramos</h4></a>
+              </div>
+            </div>
+          </div>
+
+        </section>
+      </main>
+      
+      <footer>
+        <p>&copy; 2024 Conecta Arte. Todos os direitos reservados.</p>
+      </footer>
+    </body>
+</html>
+
+<script src="clickimagens.js"></script> 
+<!--o script no final do <body> ou usar o evento DOMContentLoaded para garantir que o JavaScript seja executado após o carregamento da página.-->

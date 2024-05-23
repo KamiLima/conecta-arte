@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="960_12_col.css">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Conecta Arte</title>
+</head>
+<body>
+  <div class="container_12 clearfix"></div>
+  
+  <header>
+      <!--Baner + Botão de Login-->
+     <div class="banner-container">
+      <section class="banner">
+        <img src="imagens/Banner.jpg" alt="Banner do site" width="100%">
+      </section>
+      <div class="login-button">
+        <a href="login/login.html" class="btn btn-login">Fazer Login</a>
+      </div>
+     </div>
+      
+      <nav>
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="artistas.html">Artistas</a></li>
+          <li><a href="artes.html">Artes</a></li>
+          <li><a href="sobrenos.html">Sobre Nós</a></li>
+        </ul>
+      </nav>
+  </header>
+
+  <main>
+    <div class="pesquisa-container">
+        <input type="text" placeholder="Pesquisar..." class="pesquisa-input">
+        <button type="submit" class="botao-pesquisa">
+          Pesquisar
+        </button>
+    </div>
+
+    <section>
+        <!-- Filtros -->
+        <div class="filters">
+            <button class="filter-button active" data-filter="all">Todos</button>
+            <button class="filter-button" data-filter="pintura">Pintura</button>
+            <button class="filter-button" data-filter="croche">Crochê</button>
+            <button class="filter-button" data-filter="joalheria">Joalheria</button>
+            <button class="filter-button" data-filter="design">Design</button>
+            <button class="filter-button" data-filter="desenho">Desenho</button>
+            <button class="filter-button" data-filter="bordado">Bordado</button>
+            <button class="filter-button" data-filter="escultura">Escultura</button>
+            <button class="filter-button" data-filter="ceramica">Cerâmica</button>
+        </div>
+
+        <div class="art-items-container">
+           <div class="row">
+              <!-- Modal -->
+              <!-- Este é o elemento principal do modal, com um ID único e uma classe -->
+              <div id="image-modal" class="image-modal">
+                  <!-- Botão de fechar o modal, com uma classe específica -->
+                  <span class="image-modal__close-button">&times;</span>
+                  <!-- Wrapper para centralizar o conteúdo do modal (imagem ) -->
+                  <div class="image-modal__content-wrapper">
+                      <!-- Elemento img que exibirá a imagem ampliada, com uma classe e um ID -->
+                    <img class="image-modal__content" id="modal-image">
+                  </div>
+                </div>
+
+              <div class="col-6 col-md-3">
+                <div class="art-item" data-type="ceramica">
+                  <h3>Vasos Florais</h3>
+                  <img src="imagens/arte01.jpg" alt="Vasos de Cerâmica" class="art-item__image">
+                  <p>Vasos de cerâmica branca com belos desenhos florais decorativos.</p>
+                  <a href="perfilGio.html"><h4>Giovana Costa</h4></a>
+                </div>
+              </div>
+              <div class="col-6 col-md-3" >
+                <div class="art-item" data-type="croche">
+                  <h3>Coelho Branco</h3>
+                  <img src="imagens/arte02.jpg" alt="Coelho de Crochê" class="art-item__image">
+                  <p>Coelho branco de pelúcia vestindo um fofo vestido rosa feito em crochê.</p>
+                  <a href="perfilLucas.html"><h4>Lucas Lee</h4></a>
+                </div>
+              </div>
+              <div class="col-6 col-md-3" >
+                <div class="art-item" data-type="desenho">
+                  <h3>Mulher em Flores</h3>
+                  <img src="imagens/arte03.jpg" alt="Desenho digital de uma mulher" class="art-item__image">
+                  <p>Ilustração digital</p>
+                  <a href="perfilLaura.html"><h4>Laura Bueno</h4></a>
+                </div>
+              </div>
+              <div class="col-6 col-md-3">
+                <div class="art-item" data-type="escultura">
+                  <h3>Escultura de Raposa</h3>
+                  <img src="imagens/arte04.jpg" alt="Escultura de Raposa" class="art-item__image">
+                  <p>Escultura de uma raposa, capturando com detalhes os traços característicos do animal.</p>
+                  <a href="perfilIracema.html"><h4>Iracema Pires</h4></a>
+                </div>
+              </div>
+            </div>
+
+            <!--Segunda fileira -->
+
+            <div class="row">
+              <div class="col-6 col-md-3">
+                <div class="art-item" data-type="joalheria">
+                  <h3>Brincos Lemon</h3>
+                  <img src="imagens/arte05.jpg" alt="Brincos Limão" class="art-item__image">
+                  <p>Brincos pendurados em fios dourados, com delicados ornamentos em forma de flores e limões feitos em acrílico. </p>
+                  <a href="perfilRafa.html"><h4>Rafa Lyra</h4></a>
+                  
+                </div>
+              </div>
+              <div class="col-6 col-md-3" >
+                <div class="art-item" data-type="pintura">
+                  <h3>Mar e Céu </h3>
+                  <img src="imagens/arte06.jpg" alt="Pintura do mar e ceu" class="art-item__image">
+                  <p>Pintura em acrílica retratando um belo cenário marítimo com céu rosado.</p>
+                  <a href="perfilMirella.html"><h4>Mirella Ramos</h4></a>
+                </div>
+              </div>
+              <div class="col-6 col-md-3">
+                <div class="art-item" data-type="design">
+                  <h3>Idêntidade Visual</h3>
+                  <img src="imagens/arte07.jpg" alt="identidade Visual" class="art-item__image">
+                  <p>Imagem de identidade visual com uma paleta de cores suaves e naturais, incluindo tons de verde, bege e rosa. 
+                      A composição é decorada com flores, que adicionam um toque orgânico. </p>
+                  <a href="perfilMurilo.html"><h4>Murilo Oliveira</h4></a>
+                </div>
+              </div>
+              <div class="col-6 col-md-3">
+                <div class="art-item" data-type="bordado">
+                  <h3>Bordado Morangos</h3>
+                  <img src="imagens/arte08.jpg" alt="Escultura de Raposa" class="art-item__image">
+                  <p>Delicado bordado artesanal com vários morangos. A peça transmite frescor e textura, com os frutos bordados em tons de vermelho, rosa e verde.</p>
+                  <a href="perfilCamila.html"><h4>Camila Ramos</h4></a>
+                </div>
+              </div>
+            </div>
+
+            <!--Terceura Fileira-->
+            <div class="row">
+            <div class="col-6 col-md-3">
+              <div class="art-item" data-type="escultura">
+                <h3>Mulher e Gato</h3>
+                <img src="imagens/arte09.jpg" alt="escultura mulher com gato" class="art-item__image">
+                <p>Escultura mulher ruiva com seu gato.</p>
+                <a href="perfilIracema.html"><h4>Iracema Pires</h4></a>
+              </div>
+            </div>
+            <div class="col-6 col-md-3" >
+              <div class="art-item" data-type="joalheria">
+                <h3>Pulseira Solar</h3>
+                <img src="imagens/arte10.jpg" alt="Pulseira sistema solar" class="art-item__image">
+                <p>Pulseira em prata, pingente de sol e planetas</p>
+                <a href="perfilRafa.html"><h4>Rafa Lyra</h4></a>
+              </div>
+            </div>
+            <div class="col-6 col-md-3" >
+              <div class="art-item" data-type="pintura">
+                <h3>Entardecer no lago</h3>
+                <img src="imagens/arte11.jpg" alt="Pintura de um entardecer no lago" class="art-item__image">
+                <p>intura em acrílica retratando um belo lago no entardecer.</p>
+                <a href="perfilMirella.html"><h4>Mirella Ramos</h4></a>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="art-item" data-type="ceramica">
+                <h3>Prato Decorado</h3>
+                <img src="imagens/arte12.jpg" alt="Prato em ceramica decorado com flores" class="art-item__image">
+                <p>Prato em cerâmica decorado com flores e coração.</p>
+                <a href="perfilGio.html"><h4>Giovana Costa</h4></a>
+              </div>
+            </div>
+          </div>
+
+          <!--Quarta fileira -->
+
+          <div class="row">
+            <div class="col-6 col-md-3">
+              <div class="art-item" data-type="pintura">
+                <h3>Tarde no campo</h3>
+                <img src="imagens/arte13.jpg" alt="Pintura" class="art-item__image">
+                <p>Pintura em acrílica retratando uma tarde no campo. </p>
+                <a href="perfilMirella.html"><h4>Mirella Ramos</h4></a>
+              </div>
+            </div>
+
+            <div class="col-6 col-md-3" >
+              <div class="art-item" data-type="bordado">
+                <h3>Trio de abelhas </h3>
+                <img src="imagens/arte14.jpg" alt="bordado de 3 abelhas em flores " class="art-item__image">
+                <p>Pintura em acrílica retratando um belo cenário marítimo com céu rosado.</p>
+                <a href="perfilCamila.html"><h4>Camila Ramos</h4></a>
+              </div>
+            </div>
+
+            <div class="col-6 col-md-3">
+              <div class="art-item" data-type="croche">
+                <h3>Bolsa Margarida</h3>
+                <img src="imagens/arte15.jpg" alt="Bolsa feita em crochê, nas cor verde, com flores de margaridas" class="art-item__image">
+                <p>Bolsa feita em crochê, nas cor verde, com flores de margaridas. </p>
+                <a href="perfilLucas.html"><h4>Lucas Lee</h4></a>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="art-item" data-type="desenho">
+                <h3>Bruxinha lendo</h3>
+                <img src="imagens/arte16.jpg" alt="desenho menina lendo livro" class="art-item__image">
+                <p>Delicado desenho de uma menina bruxa lendo um livro</p>
+                <a href="perfilLaura.html"><h4>Laura Bueno</h4></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      </section>
+
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Conecta Arte. Todos os direitos reservados.</p>
+    </footer>
+  </body>
+  </html>
+  <script src="clickimagens.js"></script>
+  <script src="filtro.js"></script>
+  <!--o script no final do <body> ou usar o evento DOMContentLoaded para garantir que o JavaScript seja executado após o carregamento da página.-->
